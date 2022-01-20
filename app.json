@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "spellbook",
+    "slug": "spellbook",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "spellbook"
+}

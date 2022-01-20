@@ -5,6 +5,10 @@ export const homeStyles = StyleSheet.create({
         backgroundColor: '#ADD8E6'
     },
     homeText: {
-        color: 'white'
+        position: 'absolute',
+        top: 0,
+        color: 'black',
+        alignSelf: 'center',
+        fontSize: 32,
     } 
 });

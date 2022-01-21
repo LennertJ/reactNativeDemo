@@ -1,11 +1,12 @@
 import React from "react";
-import { Button, ImageBackground, Image, Text, View } from "react-native";
+import { Pressable , ImageBackground, Image, Text, View } from "react-native";
 import { homeStyles } from "../styles/home";
 import { baseStyles } from "../styles/base";
 import image from '../assets/background.jpg';
 import { useFonts } from 'expo-font';
 
 const IMAGE = Image.resolveAssetSource(image).uri;
+const USER = "Lennert"
 
 export default function Home({ navigation }){
     const [loaded] = useFonts({
@@ -20,8 +21,10 @@ export default function Home({ navigation }){
     return (
         <View style={baseStyles.background}>
             <ImageBackground source={{uri: IMAGE}} style={baseStyles.backgroundImage}>
-            <Text style={homeStyles.homeText}>Welcome Lennert</Text>
-            <Button title="See all spells" onPress={() => navigation.navigate('Spellslist')}/>
+            <Text style={homeStyles.homeText}>Welcome { USER } </Text>
+            <Pressable style={homeStyles.homeButton} onPress={() => navigation.navigate('Spellslist')}>
+                <Text style={homeStyles.homeButtonText}>See all spells {">"}{">"}</Text>
+            </Pressable>
             </ImageBackground>
         </View>
     )

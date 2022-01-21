@@ -49,7 +49,19 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-  <key>UIStatusBarStyle</key>
-  <string>UIStatusBarStyleDefault</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>cooed___.ttf</string>
+		<string>DK Blackminster.otf</string>
+		<string>LUXEMBOU.TTF</string>
+		<string>Old_Englished_Boots.ttf</string>
+		<string>Wendell_v1.ttf</string>
+		<string>cooed.otf</string>
+		<string>cooed.ttf</string>
+		<string>DK_Blackminster.otf</string>
+		<string>Luxembou.ttf</string>
+	</array>
 </dict>
 </plist>

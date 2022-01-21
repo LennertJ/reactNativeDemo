@@ -14,6 +14,15 @@
 		96905EF65AED1B983A6B3ABC /* libPods-spellbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-spellbook.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		530DB76DC1934A74894119BC /* cooed___.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33D1523A12CA4B0B9A37ECAB /* cooed___.ttf */; };
+		2C41CD929637417DA8BC88EB /* DK Blackminster.otf in Resources */ = {isa = PBXBuildFile; fileRef = B93EA9591E0D495DB1AD0DA4 /* DK Blackminster.otf */; };
+		DEB5A64EB4304E0180EDD843 /* LUXEMBOU.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B997B07D057E4B6EB0BCC2FB /* LUXEMBOU.TTF */; };
+		B43022CF1CDB4BC79CBB7916 /* Old_Englished_Boots.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB5818AB28F643269D435D8D /* Old_Englished_Boots.ttf */; };
+		CE5F21AA0C374AD59B13442A /* Wendell_v1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F7C8C700C0847588023F812 /* Wendell_v1.ttf */; };
+		AB52EBDC03844F269EEC7F03 /* cooed.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6AE99C307ADF490EBCD9FF20 /* cooed.otf */; };
+		0D4D26325C2D45948B2E1847 /* cooed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39A3F51FA81B4109B3559F17 /* cooed.ttf */; };
+		16EB6192D0AC4F829A7ED670 /* DK_Blackminster.otf in Resources */ = {isa = PBXBuildFile; fileRef = D7E28BE0603D4C2FB424C750 /* DK_Blackminster.otf */; };
+		68FB662352BA4590AE21634C /* Luxembou.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BBB813A6432142EFA7689D48 /* Luxembou.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,15 @@
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-spellbook/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		33D1523A12CA4B0B9A37ECAB /* cooed___.ttf */ = {isa = PBXFileReference; name = "cooed___.ttf"; path = "../assets/fonts/cooed___.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B93EA9591E0D495DB1AD0DA4 /* DK Blackminster.otf */ = {isa = PBXFileReference; name = "DK Blackminster.otf"; path = "../assets/fonts/DK Blackminster.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B997B07D057E4B6EB0BCC2FB /* LUXEMBOU.TTF */ = {isa = PBXFileReference; name = "LUXEMBOU.TTF"; path = "../assets/fonts/LUXEMBOU.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DB5818AB28F643269D435D8D /* Old_Englished_Boots.ttf */ = {isa = PBXFileReference; name = "Old_Englished_Boots.ttf"; path = "../assets/fonts/Old_Englished_Boots.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F7C8C700C0847588023F812 /* Wendell_v1.ttf */ = {isa = PBXFileReference; name = "Wendell_v1.ttf"; path = "../assets/fonts/Wendell_v1.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6AE99C307ADF490EBCD9FF20 /* cooed.otf */ = {isa = PBXFileReference; name = "cooed.otf"; path = "../assets/fonts/cooed.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39A3F51FA81B4109B3559F17 /* cooed.ttf */ = {isa = PBXFileReference; name = "cooed.ttf"; path = "../assets/fonts/cooed.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D7E28BE0603D4C2FB424C750 /* DK_Blackminster.otf */ = {isa = PBXFileReference; name = "DK_Blackminster.otf"; path = "../assets/fonts/DK_Blackminster.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BBB813A6432142EFA7689D48 /* Luxembou.ttf */ = {isa = PBXFileReference; name = "Luxembou.ttf"; path = "../assets/fonts/Luxembou.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +103,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				25451C5A712548C5B1F20AD7 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -132,6 +151,23 @@
 			);
 			name = ExpoModulesProviders;
 			sourceTree = "<group>";
+		};
+		25451C5A712548C5B1F20AD7 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				33D1523A12CA4B0B9A37ECAB /* cooed___.ttf */,
+				B93EA9591E0D495DB1AD0DA4 /* DK Blackminster.otf */,
+				B997B07D057E4B6EB0BCC2FB /* LUXEMBOU.TTF */,
+				DB5818AB28F643269D435D8D /* Old_Englished_Boots.ttf */,
+				6F7C8C700C0847588023F812 /* Wendell_v1.ttf */,
+				6AE99C307ADF490EBCD9FF20 /* cooed.otf */,
+				39A3F51FA81B4109B3559F17 /* cooed.ttf */,
+				D7E28BE0603D4C2FB424C750 /* DK_Blackminster.otf */,
+				BBB813A6432142EFA7689D48 /* Luxembou.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -196,6 +232,15 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				530DB76DC1934A74894119BC /* cooed___.ttf in Resources */,
+				2C41CD929637417DA8BC88EB /* DK Blackminster.otf in Resources */,
+				DEB5A64EB4304E0180EDD843 /* LUXEMBOU.TTF in Resources */,
+				B43022CF1CDB4BC79CBB7916 /* Old_Englished_Boots.ttf in Resources */,
+				CE5F21AA0C374AD59B13442A /* Wendell_v1.ttf in Resources */,
+				AB52EBDC03844F269EEC7F03 /* cooed.otf in Resources */,
+				0D4D26325C2D45948B2E1847 /* cooed.ttf in Resources */,
+				16EB6192D0AC4F829A7ED670 /* DK_Blackminster.otf in Resources */,
+				68FB662352BA4590AE21634C /* Luxembou.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

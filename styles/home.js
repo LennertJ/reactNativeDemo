@@ -9,6 +9,7 @@ export const homeStyles = StyleSheet.create({
         top: 0,
         color: 'black',
         alignSelf: 'center',
-        fontSize: 32,
+        fontSize: 48,
+        fontFamily: "Old_Englished_Boots"// DK_Blackminster Cooed Old_Englished_Boots Wendell
     } 
 });

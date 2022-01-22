@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { baseStyles } from "../../styles/base";
 import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 
+
 class Spellslist extends Component {
     constructor(props) {
         super(props);
@@ -28,22 +29,20 @@ class Spellslist extends Component {
         }
     }
     render() {
+
         const { data, isLoading } = this.state;
         return (
             <View style={{ flex: 1, padding: 24 }}>
-                
-                {isLoading ? <ActivityIndicator /> : (
-                    <FlatList
-                        data={data}
-                        keyExtractor={({ id }, index) => id}
-                        renderItem={({ item }) => (
-                        <listItem url = {item.url} name={item.name}></listItem>
-                        //<Text>{item.name}, {item.url}</Text>
-                        )}
-                    />
-                )}
+                {isLoading ? <ActivityIndicator /> : data.map((item) => { return (<ListItem name={item.name} url={item.url}></ListItem>); }) }
             </View>
         );
     }
 }
+
+class ListItem extends Component {
+    render() {
+        return <Text>{this.props.url} {"\n"} {this.props.name}</Text>;
+    }
+}
+
 export default Spellslist;

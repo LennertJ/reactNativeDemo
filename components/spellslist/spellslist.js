@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { baseStyles } from "../../styles/base";
-import { ActivityIndicator, FlatList, Text, View } from 'react-native';
+import { ActivityIndicator, ScrollView, Text } from 'react-native';
+import ListItem from './listItem'
 
 
 class Spellslist extends Component {
@@ -32,17 +32,12 @@ class Spellslist extends Component {
 
         const { data, isLoading } = this.state;
         return (
-            <View style={{ flex: 1, padding: 24 }}>
+            <ScrollView>
                 {isLoading ? <ActivityIndicator /> : data.map((item) => { return (<ListItem name={item.name} url={item.url}></ListItem>); }) }
-            </View>
+            </ScrollView>
         );
     }
 }
 
-class ListItem extends Component {
-    render() {
-        return <Text>{this.props.url} {"\n"} {this.props.name}</Text>;
-    }
-}
 
 export default Spellslist;

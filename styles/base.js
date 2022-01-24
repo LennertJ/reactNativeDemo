@@ -9,4 +9,13 @@ export const baseStyles = StyleSheet.create({
         resizeMode: 'cover',
         justifyContent: 'center',
     },
+    listTitle : {
+        fontSize: 20,
+        padding: 3,
+        fontWeight: 'bold',
+    },
+    listItem : {
+        padding: 10,
+        borderBottomWidth: 1,
+    }
 });

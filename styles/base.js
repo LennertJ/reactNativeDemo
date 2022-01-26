@@ -17,5 +17,10 @@ export const baseStyles = StyleSheet.create({
     listItem : {
         padding: 10,
         borderBottomWidth: 1,
-    }
+    },
+    containerRow : {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+    },
 });

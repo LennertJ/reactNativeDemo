@@ -28,7 +28,6 @@ class Spellslist extends Component {
         }
     }
     render() {
-
         const { data, isLoading } = this.state;
         return (
             <ScrollView>

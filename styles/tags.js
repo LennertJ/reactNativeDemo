@@ -13,7 +13,7 @@ export const tagsStyles = StyleSheet.create({
             case("Bard"): 
                 return { backgroundColor: '#C73032', color: '#FFD700' }
             case("Cleric"):
-                return { backgroundColor: '#89cff0', color: '#FFD700' }
+                return { backgroundColor: '#dd0000', color: '#a0e0ff' }
             case("Druid"):
                 return { backgroundColor: '#964B00', color: '#5DBB63' }
             case("Paladin"):

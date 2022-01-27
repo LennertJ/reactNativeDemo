@@ -6,7 +6,7 @@ class SpellDetails extends Component {
     render() {
         return (
             <View style={baseStyles.background}>
-                <Text>spellDetails</Text>
+                <Text>{this.props.route.params.url}</Text>
             </View>
         );
     }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { baseStyles } from "../../styles/base";
 import { detailsStyles } from '../../styles/details';
-import { ActivityIndicator, Image, Text, View } from 'react-native';
+import { ActivityIndicator, Image, Text, ScrollView, View } from 'react-native';
 import getSigil from "../../assets/sigils/_index";
+import  ClassTag  from "../classtag"
 
 class SpellDetails extends Component {
     constructor(props) {
@@ -35,7 +36,7 @@ class SpellDetails extends Component {
 
     render() {
         const { data, isLoading } = this.state;
-        return (<View style={[baseStyles.background, detailsStyles.container]}>
+        return (<ScrollView style={[baseStyles.background, detailsStyles.container]}>
             {isLoading ? <ActivityIndicator /> :
                 <>
                     <Text style={detailsStyles.h1}> {data.name} </Text>
@@ -52,10 +53,16 @@ class SpellDetails extends Component {
                     <Text style={[detailsStyles.boxedField]}>{data.desc} </Text>
                     <Text style={[baseStyles.bold]}> At higher level: </Text>
                     <Text style={[detailsStyles.boxedField]}>{data.higher_level}</Text>
+                    <View  style={baseStyles.containerRow}> 
+                        <Text style={[baseStyles.bold]}> (Sub-)classes: </Text> 
+                        {data.classes.map((item) => { return (<ClassTag dndClass={item.name} key={item.name}></ClassTag>); })}
+                        {data.subclasses.map((item) => { return (<ClassTag dndClass={item.name} key={item.name}></ClassTag>); })}
+                    </View>
+
                     <Image style={detailsStyles.sigil} source={getSigil(data.school.name)}></Image>
                 </>
             }
-        </View>
+        </ScrollView>
         );
     }
 }

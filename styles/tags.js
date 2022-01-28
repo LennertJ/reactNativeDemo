@@ -7,6 +7,7 @@ export const tagsStyles = StyleSheet.create({
         paddingLeft: 10,
         paddingRight: 10,
         borderRadius: 10,
+        backgroundColor: '#dddddd'
     },
     getClassTag(className){
         switch(className){

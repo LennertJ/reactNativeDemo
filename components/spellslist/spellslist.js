@@ -30,7 +30,10 @@ class Spellslist extends Component {
         const { data, isLoading } = this.state;
         return (
             <ScrollView>
-                {isLoading ? <ActivityIndicator /> : data.map((item) => { return (<ListItem key={item.url} name={item.name} url={item.url}></ListItem>); }) }
+                {isLoading ? 
+                    <ActivityIndicator /> : 
+                    data.map((item) => { return (<ListItem key={item.url} name={item.name} url={item.url}></ListItem>); }) 
+                }
             </ScrollView>
         );
     }

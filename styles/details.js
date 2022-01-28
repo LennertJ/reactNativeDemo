@@ -20,5 +20,6 @@ export const detailsStyles = StyleSheet.create({
     boxedField: {
         borderWidth: 1,
         padding: 10,
+        margin: 10
     }
 });

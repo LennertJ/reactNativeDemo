@@ -1,5 +1,5 @@
 import React from "react";
-import { Pressable , ImageBackground, Image, Text, View } from "react-native";
+import { Pressable, ImageBackground, Image, Text, View } from "react-native";
 import { homeStyles } from "../styles/home";
 import { baseStyles } from "../styles/base";
 import image from '../assets/background.jpg';

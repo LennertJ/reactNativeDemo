@@ -23,4 +23,8 @@ export const baseStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'flex-start',
     },
+    bold : {
+        fontWeight: 'bold',
+        fontSize: 16
+    }
 });

@@ -41,12 +41,13 @@ class SpellDetails extends Component {
                     <Text style={detailsStyles.h1}> {data.name} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Range: </Text> {data.range} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Components: </Text> {data.components} </Text>
+                    <Text> <Text style={[baseStyles.bold]}> Material: </Text> {(data.hasOwnProperty("material") ) ? data.material : "None"} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Ritual: </Text> {(data.ritual) ? "Yes" : "No"} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Concentration: </Text> {(data.concentration) ? "Yes" : "No"} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Casting Time: </Text> {data.casting_time} </Text>
                     <Text> <Text style={[baseStyles.bold]}> Level: </Text> {data.level} </Text>
-                    <Text> <Text style={[baseStyles.bold]}> Attack type: </Text> {data.attack_type} </Text>
-                    <Text> <Text style={[baseStyles.bold]}> Damage type: </Text>{data.damage.damage_type.name} </Text>
+                    { data.hasOwnProperty("attack_type") ? <Text> <Text style={[baseStyles.bold]}> Attack type: </Text> {data.attack_type} </Text> : <></>}
+                    { data.hasOwnProperty("damage") ? <Text> <Text style={[baseStyles.bold]}> Damage type: </Text>{data.damage.damage_type.name} </Text> : <></>}
                     <Text style={[baseStyles.bold]}> Description: </Text>
                     <Text style={[detailsStyles.boxedField]}>{data.desc} </Text>
                     <Text style={[baseStyles.bold]}> At higher level: </Text>

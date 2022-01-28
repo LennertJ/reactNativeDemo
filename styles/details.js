@@ -14,7 +14,8 @@ export const detailsStyles = StyleSheet.create({
     },
     h1: {
         fontSize: 20,
-        color: "#FFD700"
+        fontWeight: 'bold',
+        color: "#bd9f00"
     },
     boxedField: {
         borderWidth: 1,

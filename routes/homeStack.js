@@ -12,9 +12,9 @@ export default function Navigator() {
     return (
     <NavigationContainer ref={navigationRef}>
         <Stack.Navigator initialRouteName='Home'>
-            <Stack.Screen name='Home' component={Home} options={{ title: ''}}/>
+            <Stack.Screen name='Home' component={Home} options={{ title: 'Home'}}/>
             <Stack.Screen name='Spellslist' component={Spellslist} options={{ title: 'Look at all these spells'}}/>
-            <Stack.Screen name='SpellDetails' component={SpellDetails} options={{ title: 'Spellname, soon™'}}/>
+            <Stack.Screen name='SpellDetails' component={SpellDetails} options={{ title: 'Details'}}/>
         </Stack.Navigator>
     </NavigationContainer>
     );

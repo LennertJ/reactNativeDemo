@@ -34,10 +34,11 @@ class ListItem extends Component {
         return <View  style={baseStyles.listItem}>
             {isLoading ? <ActivityIndicator /> :
             <Pressable style={baseStyles.infoButton} onPress={() => RootNavigation.navigate('SpellDetails', { url: this.props.url })}>
-                <Text style={baseStyles.listTitle}> {this.props.name} </Text>
-                { data.level==0 ? <Text>Cantrip </Text> : <Text> Level: {data.level} </Text> }
+                <Text style={baseStyles.listTitle}>{this.props.name} </Text>
+                { data.level==0 ? <Text> Cantrip </Text> : <Text> Level: {data.level} </Text> }
                 <View style={baseStyles.containerRow}>
                     {data.classes.map((item) => { return (<ClassTag dndClass={item.name} key={item.name}></ClassTag>); })}
+                    {data.subclasses.map((item) => { return (<ClassTag dndClass={item.name} key={item.name}></ClassTag>); })}
                 </View>
             </Pressable>  
             }

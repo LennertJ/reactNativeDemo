@@ -22,9 +22,16 @@ export const baseStyles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'flex-start',
+        flexWrap: 'wrap'
     },
     bold : {
         fontWeight: 'bold',
         fontSize: 16
-    }
+    },
+    input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 1,
+        padding: 10,
+    },
 });

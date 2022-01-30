@@ -15,19 +15,8 @@ class SpellDetails extends Component {
     }
 
     componentDidMount() {
-        this.getSpellInfo();
-    }
-
-    async getSpellInfo() {
-        try {
-            const response = await fetch('https://www.dnd5eapi.co' + this.props.route.params.url);
-            const json = await response.json();
-            this.setState({ data: json });
-        } catch (error) {
-            console.log(error);
-        } finally {
-            this.setState({ isLoading: false });
-        }
+        this.setState({ data: this.props.route.params.data });
+        this.setState({ isLoading: false });
     }
 
     getSigil(sigilName) {

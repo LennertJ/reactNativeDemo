@@ -33,7 +33,7 @@ class ListItem extends Component {
         const { data, isLoading } = this.state;
         return <View style={baseStyles.listItem}>
             {isLoading ? <ActivityIndicator /> :
-            <Pressable style={baseStyles.infoButton} onPress={() => RootNavigation.navigate('SpellDetails', { url: this.props.url })}>
+            <Pressable style={baseStyles.infoButton} onPress={() => RootNavigation.navigate('SpellDetails', { data: data})}>
                 <Text style={baseStyles.listTitle}>{this.props.name} </Text>
                 { data.level==0 ? <Text> Cantrip </Text> : <Text> Level: {data.level} </Text> }
                 <View style={baseStyles.containerRow}>

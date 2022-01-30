@@ -24,14 +24,24 @@ export const baseStyles = StyleSheet.create({
         justifyContent: 'flex-start',
         flexWrap: 'wrap'
     },
+    flexSpaceBetween : {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    },
     bold : {
         fontWeight: 'bold',
         fontSize: 16
     },
     input: {
         height: 40,
-        margin: 12,
         borderWidth: 1,
         padding: 10,
     },
+    padding10:{
+        padding: 10,
+    },
+    margin10: {
+        margin: 10
+    }
 });

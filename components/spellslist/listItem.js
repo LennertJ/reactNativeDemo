@@ -31,7 +31,7 @@ class ListItem extends Component {
 
     render() {
         const { data, isLoading } = this.state;
-        return <View  style={baseStyles.listItem}>
+        return <View style={baseStyles.listItem}>
             {isLoading ? <ActivityIndicator /> :
             <Pressable style={baseStyles.infoButton} onPress={() => RootNavigation.navigate('SpellDetails', { url: this.props.url })}>
                 <Text style={baseStyles.listTitle}>{this.props.name} </Text>
